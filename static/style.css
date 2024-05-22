@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+a{
+    color: #fff;
+}
+body {
+    background-color: #010409;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    text-align: center;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* CABEÇALHO */
+#header {
+    background-color: #010409;
+    padding: 1em;
+    margin: 0 auto;
+}
+#header h1 {
+    color: #fff;
+}
+#header a {
+    text-decoration: none;
+}
+#header a:hover {
+    text-shadow: 1px 1px 25px #484848;
+}
+
+/*DASHBOARD*/
+#dashboard {
+    background-color: #0D1117;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+#dashboard h2 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5em;
+}
+
+/*DATABASE*/
+#all_db {
+    background-color: #0D1117;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+#all_db h2 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5em;
+}
+#head_db {
+    display: flex;
+}
+#btn_db {
+    background-color: #010409;
+    padding: 1em;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+#btn_db a {
+    text-decoration: none;
+    color: #fff;
+}
+#btn_db h3 {
+    margin: 0;
+}
+#add_span {
+    color: #00ff00;
+}
+#del_span {
+    color: #ff0000;
+}
+#edit_span {
+    color: #00ced1;
+}
+
+/* DATABASE */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    color: #fff;
+}
+th, td {
+    border: 1px solid #fff;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #010409;
+}
+tr:nth-child(even) {
+    background-color: #010409;
+}
+tr:hover {
+    background-color: #070B10;
+}
+#lines {
+    font-weight: bold;
+}
+#mysqlTable {
+    background-color: #0D1117;
+}
+#mysqlTable a {
+    text-decoration: none;
+}
+#mysqlTable a:hover {
+    text-decoration: underline;
+}
+
+
+/* add_produto.html */
+.formulario {
+    background-color: #0D1117;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+.formulario h2 {
+    color: #fff;
+    text-align: center;
+}
+.formulario #form_inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario input {
+    width: 25em;
+    border: none;
+    margin: 0.25em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #010409;
+    color: #b0b0b0;
+}
+.formulario input::placeholder {
+    color: #b0b0b0;
+    font-family: 'Montserrat', sans-serif;
+}
+#form_btn_adicionar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form_btn_adicionar button {
+    padding: 1em 5em;
+    border-radius: 1em;
+    background-color: #010409;
+    border: none;
+    color: #b0b0b0;
+}

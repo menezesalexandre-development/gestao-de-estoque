@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Gestõd de Estoque</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div id="header">
+        <a href="/"><h1>GESTÃO DE ESTOQUE</h1></a>
+    </div>  
+
+    <div id="dashboard">
+        <h2>Dashboard</h2>
+    </div>
+
+    <div class="database" id="all_db">
+        <div class="database" id="head_db">
+            <h2>Produtos</h2>
+        </div>
+        <div class="database" id="btn_db">
+            <a href="adicionar_produto">
+                <h3><span id="add_span">+</span> Adicionar produto</h3>
+            </a>
+        </div>
+        <div class="database" id="trv_db">
+            <table id="mysqlTable">
+                <thead>
+                    <tr id="columns">
+                        <th></th>
+                        <th></th>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Tipo</th>
+                        <th>Preço</th>
+                        <th>Qtd. Estoque</th>
+                        <th>Qtd. Miníma Estoque</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for produto in produtos %}
+                    <tr id="lines">
+                        <td><a class="request_db_btn" href="editar_produto/{{ produto[0] }}" id="a_editar"><span id="edit_span">*</span> Editar</a></td>
+                        <td><a class="request_db_btn" href="deletar_produto/{{ produto[0] }}"><span id="del_span">-</span> Deletar</a></td>
+                        <td>{{ produto[0] }}</td>
+                        <td>{{ produto[1] }}</td>
+                        <td>{{ produto[2] }}</td>
+                        <td>{{ produto[3] }}</td>
+                        <td>{{ produto[4] }}</td>
+                        <td>{{ produto[5] }}</td>
+                        <td>{{ produto[6] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
