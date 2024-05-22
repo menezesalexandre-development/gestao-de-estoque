@@ -14,7 +14,7 @@ def homepage_read():
         password='',
         database='gestao-de-estoque'
     )
-    query = 'SELECT * FROM produtos'
+    query = 'SELECT * FROM produtos ORDER BY id DESC;'
     cursor = db.cursor()
     cursor.execute(query)
     produtos = cursor.fetchall()
