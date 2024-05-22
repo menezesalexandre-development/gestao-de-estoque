@@ -18,7 +18,13 @@ def homepage_read():
     cursor = db.cursor()
     cursor.execute(query)
     produtos = cursor.fetchall()
-    return render_template('index.html', produtos=produtos)
+
+    query = 'SELECT COUNT(*) FROM produtos;'
+    cursor = db.cursor()
+    cursor.execute(query)
+    qtd_produtos = cursor.fetchall()
+
+    return render_template('index.html', produtos=produtos, qtd_produtos=qtd_produtos)
 
 # MÉTODO POST:
 @app.route("/adicionar_produto", methods=["GET", "POST"])

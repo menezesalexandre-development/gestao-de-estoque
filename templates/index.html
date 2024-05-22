@@ -11,8 +11,14 @@
         <a href="/"><h1>GESTÃO DE ESTOQUE</h1></a>
     </div>  
 
-    <div id="dashboard">
-        <h2>Dashboard</h2>
+    <div class="dashboard" id="dashboard-general">
+        <div class="dashboard" id="dashboard-title">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="dashboard" id="dashboard-data">
+            <h2>Quantidade de produtos:</h2>
+            <p>{{ qtd_produtos[0][0] }} Produtos</p>
+        </div>
     </div>
 
     <div class="database" id="all_db">
@@ -48,7 +54,9 @@
                         <td>{{ produto[1] }}</td>
                         <td>{{ produto[2] }}</td>
                         <td>{{ produto[3] }}</td>
-                        <td>{{ produto[4] }}</td>
+                        {% set preco = ('{:.2f}'.format(produto[4])).replace('.', ',') %}
+                        {% set preco = 'R${}'.format(preco) %}
+                        <td>{{ preco }}</td>
                         <td>{{ produto[5] }}</td>
                         <td>{{ produto[6] }}</td>
                     </tr>
