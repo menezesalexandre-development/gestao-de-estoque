@@ -1,17 +1,9 @@
 import requests
 
-data = {
-    "id": 0,
-    "nome": "PS3",
-    "categoria": "Tecnologia",
-    "tipo": "Videogame",
-    "preco": 833.90,
-    "qtd_estoque": 50,
-    "qtd_estoque_minima": 10
-}
+id = 122
 
-api_url = "http://127.0.0.1:8000/cadastrar_produto"
-post_request = requests.post(api_url, json=data)
+api_url = f'http://127.0.0.1:8000/deletar_produto/{id}'
+post_request = requests.delete(api_url)
 
 if post_request.status_code == 200:
     print(post_request)
