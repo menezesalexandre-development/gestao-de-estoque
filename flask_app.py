@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import pandas as pd
 import mysql.connector
 import requests
@@ -102,7 +102,7 @@ def deletar_produto(produto_id):
         print(delete_request)
         print("failure")
 
-    return f'Deletar produto: {produto_id}'
+    return redirect("/")
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
