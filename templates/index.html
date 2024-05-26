@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
+    {% if message_popup == True %}
+        <script>
+            var message_popup_text = "{{ message_popup }}";
+            window.alert(message_popup_text);
+        </script>
+    {% endif %}
     <div id="header">
         <a href="/"><h1>GESTÃO DE ESTOQUE</h1></a>
     </div>  
