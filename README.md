@@ -1,4 +1,8 @@
-<h1 align="center">Gestão de Estoque</h1>
+<h1 align="center">Gestão de Estoque com API, Python e SQL</h1>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2d3ca5d5-4978-4299-8b5f-e41e472fbc60" width=600>
+</div>
 
 <h2>Instruções para o uso do software:</h2>
 
