@@ -1,5 +1,9 @@
 <h1 align="center">Gestão de Estoque com API, Python e SQL</h1>
 
+<p align="justify">
+  Sistema de gerenciamento de estoque com funcionalidades completas de um programa CRUD. Permite criar novos registros de produtos, visualizar detalhes do estoque em tempo real, editar informações existentes e excluir registros quando necessário. Projetado para ser intuitivo e eficiente, o sistema otimiza o controle de estoque, garantindo operações rápidas e precisas. Desenvolvido com Flask para a aplicação web, FastAPI para a API e SQL para o banco de dados, assegurando alta performance e confiabilidade.
+</p>
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2d3ca5d5-4978-4299-8b5f-e41e472fbc60" width=600>
 </div>
